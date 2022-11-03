@@ -1,0 +1,14 @@
+{
+  "name": "subscriber",
+  "version": "1.0.0",
+  "description": "mqtt subscriber",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jayce",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.3.7"
+  }
+}
