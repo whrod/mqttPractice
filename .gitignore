@@ -3,3 +3,8 @@
 
 # misc
 .DS_Store
+
+# mosquitto(broker)
+log/mosquitto.log
+config/mosquitto.conf
+config/password.txt

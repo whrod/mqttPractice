@@ -1,12 +1,13 @@
-version: '2.2'
 services:
   mosquitto:
-    restart: always
-    image: 'eclipse-mosquitto'
-    ports:
-      - '1883:1883'
-      - '9001:9001'
+    image: eclipse-mosquitto:2
     volumes:
-      - /Users/kyoungchancho/mosquitto/config:/mosquitto/config/mosquitto.conf
-      - /Users/kyoungchancho/mosquitto//data:/mosquitto/data
-      - /Users/kyoungchancho/mosquitto/log:/mosquitto/log
+      - ./config/:/mosquitto/config/:ro
+      - ./log/:/mosquitto/log/
+      - data:/mosquitto/data/
+    ports:
+      - 1883:1883
+      - 9001:9001
+
+volumes:
+  data: ~
