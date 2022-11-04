@@ -1,0 +1,26 @@
+{
+  "name": "mqtt",
+  "version": "1.0.0",
+  "description": "# broker server : mosquitto test server",
+  "main": "publisher.js",
+  "scripts": {
+    "set-broker": "docker compose up",
+    "publisher": "node publisher.js",
+    "subscriber": "node subscriber.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whrod/mqttPractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whrod/mqttPractice/issues"
+  },
+  "homepage": "https://github.com/whrod/mqttPractice#readme",
+  "dependencies": {
+    "mqtt": "^4.3.7"
+  }
+}
