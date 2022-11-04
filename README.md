@@ -1,16 +1,20 @@
 # mqttPractice
 
-# broker server : mosquitto test server
+# broker server : mosquitto
+
+1. `docker compose up` or `npm run set-broker`
 
 # usage
 
-1.  npm insatll
-2.  ./publisher
-    node main.js
-3.  ./subscriber
-    node main.js
+1.  `npm insatll`
+2.  `docker compose up` or `npm run set-broker`
+    `mkdir config`
+    `mkdir log`
+    `touch /config/mosquitto.conf`
+    `touch /config/password.txt`
+3.  `node publisher.js` or `node run publisher`
+4.  `node subscriber.js` or `node run subscriber`
 
-\*\*Run subscriber and publisher separately
-
-# ex)
-<img width="662" alt="스크린샷 2022-11-03 오후 5 21 16" src="https://user-images.githubusercontent.com/105476777/199674743-d2e00853-f87d-4cfd-a1a4-f197bf5ce6b3.png">
+mqtt 실습
+mosquitto, docker로 local broker server 만들고,
+publisher와 subscriber 통신 테스트 코드
